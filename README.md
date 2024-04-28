@@ -1,5 +1,8 @@
 # HTMLSwiftKit Starter 
-Following repository includes the starter project for [HTMLSwiftKit](https://github.com/gokulnair2001/HTMLSwiftKit). Clone this repository to understand how HTMLSwiftKit works.
+
+Following repository includes the starter project for [HTMLSwiftKit](https://github.com/gokulnair2001/HTMLSwiftKit). 
+
+Clone this repository to understand how to generate websites using HTMLSwiftKit using iOS device.
 
 The repository includes following:
 * Building HTMLPages
