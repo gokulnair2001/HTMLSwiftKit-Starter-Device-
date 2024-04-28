@@ -17,7 +17,7 @@ struct ContentView: View {
             WebViewContainer(htmlString: webContent.generateCodeBlock())
                 .padding()
         }.onAppear {
-           // main()
+            main()
         }
     }
     
