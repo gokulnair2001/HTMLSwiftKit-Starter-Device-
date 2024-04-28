@@ -7,18 +7,27 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E02EEE32BDE2DD9002AA21A /* FirstPage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02EEE22BDE2DD9002AA21A /* FirstPage.swift */; };
+		1E02EEE52BDE2DFE002AA21A /* TitleBlockCSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02EEE42BDE2DFE002AA21A /* TitleBlockCSS.swift */; };
+		1E02EEE72BDE2E10002AA21A /* SubTitleBlockCSS.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E02EEE62BDE2E10002AA21A /* SubTitleBlockCSS.swift */; };
 		1E65E2EA2BDA359C008DCBCD /* HTMLSwiftKit_Starter_DeviceApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E2E92BDA359C008DCBCD /* HTMLSwiftKit_Starter_DeviceApp.swift */; };
 		1E65E2EC2BDA359C008DCBCD /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E2EB2BDA359C008DCBCD /* ContentView.swift */; };
 		1E65E2EE2BDA359F008DCBCD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E65E2ED2BDA359F008DCBCD /* Assets.xcassets */; };
 		1E65E2F12BDA359F008DCBCD /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E65E2F02BDA359F008DCBCD /* Preview Assets.xcassets */; };
+		1E65E2F82BDA35BD008DCBCD /* WebContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E65E2F72BDA35BD008DCBCD /* WebContainer.swift */; };
+		1E65E2FB2BDA3605008DCBCD /* HTMLSwiftKit in Frameworks */ = {isa = PBXBuildFile; productRef = 1E65E2FA2BDA3605008DCBCD /* HTMLSwiftKit */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1E02EEE22BDE2DD9002AA21A /* FirstPage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstPage.swift; sourceTree = "<group>"; };
+		1E02EEE42BDE2DFE002AA21A /* TitleBlockCSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleBlockCSS.swift; sourceTree = "<group>"; };
+		1E02EEE62BDE2E10002AA21A /* SubTitleBlockCSS.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubTitleBlockCSS.swift; sourceTree = "<group>"; };
 		1E65E2E62BDA359C008DCBCD /* HTMLSwiftKit-Starter-Device.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HTMLSwiftKit-Starter-Device.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E65E2E92BDA359C008DCBCD /* HTMLSwiftKit_Starter_DeviceApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTMLSwiftKit_Starter_DeviceApp.swift; sourceTree = "<group>"; };
 		1E65E2EB2BDA359C008DCBCD /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		1E65E2ED2BDA359F008DCBCD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		1E65E2F02BDA359F008DCBCD /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1E65E2F72BDA35BD008DCBCD /* WebContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -26,12 +35,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E65E2FB2BDA3605008DCBCD /* HTMLSwiftKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1E02EEE02BDE2DC4002AA21A /* CSS */ = {
+			isa = PBXGroup;
+			children = (
+				1E02EEE42BDE2DFE002AA21A /* TitleBlockCSS.swift */,
+				1E02EEE62BDE2E10002AA21A /* SubTitleBlockCSS.swift */,
+			);
+			path = CSS;
+			sourceTree = "<group>";
+		};
+		1E02EEE12BDE2DCD002AA21A /* HTMLPages */ = {
+			isa = PBXGroup;
+			children = (
+				1E02EEE22BDE2DD9002AA21A /* FirstPage.swift */,
+			);
+			path = HTMLPages;
+			sourceTree = "<group>";
+		};
 		1E65E2DD2BDA359C008DCBCD = {
 			isa = PBXGroup;
 			children = (
@@ -51,8 +78,11 @@
 		1E65E2E82BDA359C008DCBCD /* HTMLSwiftKit-Starter-Device */ = {
 			isa = PBXGroup;
 			children = (
+				1E02EEE12BDE2DCD002AA21A /* HTMLPages */,
+				1E02EEE02BDE2DC4002AA21A /* CSS */,
 				1E65E2E92BDA359C008DCBCD /* HTMLSwiftKit_Starter_DeviceApp.swift */,
 				1E65E2EB2BDA359C008DCBCD /* ContentView.swift */,
+				1E65E2F72BDA35BD008DCBCD /* WebContainer.swift */,
 				1E65E2ED2BDA359F008DCBCD /* Assets.xcassets */,
 				1E65E2EF2BDA359F008DCBCD /* Preview Content */,
 			);
@@ -83,6 +113,9 @@
 			dependencies = (
 			);
 			name = "HTMLSwiftKit-Starter-Device";
+			packageProductDependencies = (
+				1E65E2FA2BDA3605008DCBCD /* HTMLSwiftKit */,
+			);
 			productName = "HTMLSwiftKit-Starter-Device";
 			productReference = 1E65E2E62BDA359C008DCBCD /* HTMLSwiftKit-Starter-Device.app */;
 			productType = "com.apple.product-type.application";
@@ -111,6 +144,9 @@
 				Base,
 			);
 			mainGroup = 1E65E2DD2BDA359C008DCBCD;
+			packageReferences = (
+				1E65E2F92BDA3605008DCBCD /* XCRemoteSwiftPackageReference "HTMLSwiftKit" */,
+			);
 			productRefGroup = 1E65E2E72BDA359C008DCBCD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -137,8 +173,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E65E2F82BDA35BD008DCBCD /* WebContainer.swift in Sources */,
+				1E02EEE72BDE2E10002AA21A /* SubTitleBlockCSS.swift in Sources */,
 				1E65E2EC2BDA359C008DCBCD /* ContentView.swift in Sources */,
 				1E65E2EA2BDA359C008DCBCD /* HTMLSwiftKit_Starter_DeviceApp.swift in Sources */,
+				1E02EEE52BDE2DFE002AA21A /* TitleBlockCSS.swift in Sources */,
+				1E02EEE32BDE2DD9002AA21A /* FirstPage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -344,6 +384,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		1E65E2F92BDA3605008DCBCD /* XCRemoteSwiftPackageReference "HTMLSwiftKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/gokulnair2001/HTMLSwiftKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		1E65E2FA2BDA3605008DCBCD /* HTMLSwiftKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 1E65E2F92BDA3605008DCBCD /* XCRemoteSwiftPackageReference "HTMLSwiftKit" */;
+			productName = HTMLSwiftKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 1E65E2DE2BDA359C008DCBCD /* Project object */;
 }

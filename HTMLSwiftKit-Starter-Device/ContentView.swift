@@ -6,19 +6,45 @@
 //
 
 import SwiftUI
+import HTMLSwiftKit
 
 struct ContentView: View {
+    
+    var webContent: HTMLPage
+    
     var body: some View {
         VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
+            WebViewContainer(htmlString: webContent.generateCodeBlock())
+                .padding()
+        }.onAppear {
+           // main()
         }
-        .padding()
+    }
+    
+    func main() {
+        let site = MyWebSite()
+        
+        do {
+            try site.publishViaDevice()
+        } catch {
+            print(error.localizedDescription)
+        }
     }
 }
 
+struct MyWebSite: WebSite {
+    
+    var baseUrl: URL = URL(string: "www.gokul.com")!
+    
+    var author: String = "Gokul"
+    
+    var description: String? = "Test site"
+    
+    var pages: [HTMLPage] = [FirstPage()]
+    
+}
+
+
 #Preview {
-    ContentView()
+    ContentView(webContent: FirstPage())
 }

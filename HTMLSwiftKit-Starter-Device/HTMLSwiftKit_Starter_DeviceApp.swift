@@ -11,7 +11,7 @@ import SwiftUI
 struct HTMLSwiftKit_Starter_DeviceApp: App {
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView(webContent: FirstPage())
         }
     }
 }
