@@ -17,6 +17,4 @@ Hope you liked the project. To add any specific element in HTMLSwiftKit raise an
 
 The following is a very basic website build using HTMLSwiftKit.
 
-| Website |
-| -- |
-| ![SS](https://github.com/gokulnair2001/HTMLSwiftKit-Starter-Device-/assets/56252259/4db7ae9d-4619-4aea-b852-f3823b58d54b) |
+[<img src="https://github.com/gokulnair2001/HTMLSwiftKit-Starter-Device-/assets/56252259/4db7ae9d-4619-4aea-b852-f3823b58d54b" width="450"/>]
